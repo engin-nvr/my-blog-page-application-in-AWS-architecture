@@ -1,4 +1,4 @@
-# Blog Page Application (Django) deployed on AWS
+# My Blog Page Application
 
 ## Description
 
