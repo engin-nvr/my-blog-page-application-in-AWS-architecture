@@ -2,7 +2,8 @@
 
 ## Description
 
-The phonebook application is hosted on AWS to take advantage of its scalable and eliable cloud services. It's built with the Django framework and runs on EC2 instances. An Application Load Balancer (ALB) distributes web traffic across these instances to ensure smooth operation. An Auto Scaling Group (ASG) automatically adjusts the number of EC2 instances based on demand. The application data is stored in a managed RDS database within a Virtual Private Cloud (VPC) for security. AWS Systems Manager Parameter Store securely provides the database credentials to the application. User- uploaded photos and videos are stored in Amazon S3, while Amazon CloudFront speeds up content delivery using its Content Delivery Network (CDN). Amazon Route 53 handles DNS, routing user requests to the right resources reliably.. This architecture will be created by DevOps Guy.
+Blog Page Application is designed to deploy a blog application as a web service utilizing the Django Framework on AWS Cloud Infrastructure. This setup incorporates an Application Load Balancer with an Auto Scaling Group of Elastic Compute Cloud (EC2) instances, along with Relational Database Service (RDS) situated within a defined VPC. The RDS instance retrieves its username and password from SSM parameters for enhanced security.
+Additionally, CloudFront and Route 53 are positioned at the front of the architecture, effectively managing traffic securely. Users have the capability to upload images and videos to their personal blog pages, which are stored in an S3 Bucket. The entire architecture will be implemented by the firm's dedicated DevOps engineer, ensuring optimal performance and scalability... This architecture will be created by DevOps Guy.
 
 ## Problem Statement
 
